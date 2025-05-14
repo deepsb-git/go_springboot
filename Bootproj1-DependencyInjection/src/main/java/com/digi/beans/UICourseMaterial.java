@@ -2,7 +2,9 @@ package com.digi.beans;
 
 import org.springframework.stereotype.Component;
 
-@Component("ui")
+import javax.inject.Named;
+
+@Named("ui")
 public final class UICourseMaterial implements CourseMaterial{
 
     public UICourseMaterial() {

@@ -5,12 +5,15 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import javax.inject.Inject;
+import javax.inject.Named;
 
-@Component("stud")
+
+@Named("stud")
     public final class Student {
-        @Autowired
+        @Inject
         //@Qualifier("${course.choose}")
-        @Qualifier("courseId")
+        @Named("courseId")
         private  CourseMaterial  material;  // HAS-A property
 
         public  void  preparation(String examName) {

@@ -2,7 +2,9 @@ package com.digi.beans;
 
 import org.springframework.stereotype.Component;
 
-@Component("net")
+import javax.inject.Named;
+
+@Named("net")
 public final class NetCourseMaterial implements CourseMaterial{
 
     public NetCourseMaterial() {

@@ -3,7 +3,9 @@ package com.digi.beans;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component("java")
+import javax.inject.Named;
+
+@Named("java")
 //@Primary
 public final class JavaCourseMaterial implements CourseMaterial{
 

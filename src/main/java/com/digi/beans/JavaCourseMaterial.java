@@ -4,8 +4,12 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component("java")
-@Primary
+//@Primary
 public final class JavaCourseMaterial implements CourseMaterial{
+
+   /* public JavaCourseMaterial() {
+        System.out.println("JavaCourseMaterial:: 0-param constructor");
+    }*/
 
     public JavaCourseMaterial() {
         System.out.println("JavaCourseMaterial:: 0-param constructor");
@@ -14,7 +18,7 @@ public final class JavaCourseMaterial implements CourseMaterial{
     @Override
     public String courseContent() {
         System.out.println("JavaCourseMaterial.courseContent()");
-        return"1.DP,2.DS,3.DB";
+        return "1.DP,2.DS,3.DB";
 
     }
 
